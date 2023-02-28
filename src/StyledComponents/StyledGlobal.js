@@ -1,9 +1,11 @@
-import React from 'react'
+import { createGlobalStyle } from 'styled-components'
 
-function StyledGlobal() {
-  return (
-    <div>StyledGlobal</div>
-  )
+const GlobalStyle = createGlobalStyle`
+body{
+    border:1px solid red;
 }
 
-export default StyledGlobal
+
+`;
+
+export default GlobalStyle;

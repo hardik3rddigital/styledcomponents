@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
+import GlobalStyle from "./StyledGlobal";
+
 
 function StyledNested(Props) {
   const theme2 = {
@@ -70,6 +72,7 @@ function StyledNested(Props) {
   return ( 
     <ThemeProvider theme={theme2}>
       <>
+        <GlobalStyle />
         <Anynameuse className="btn">
           Click{" "}
           <span>
