@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function StyledNested() {
+function StyledNested(Props) {
   const Anynameuse = styled.button`
     background: transparent;
     border-radius: 3px;
@@ -43,8 +43,11 @@ function StyledNested() {
     padding: 1rem;
     display: grid;
     place-items: center;
+    background-color:${(Props)=> Props.backGround};
   `;
-    
+
+
+
   return (
     <>
       <Anynameuse className="btn">
@@ -58,7 +61,7 @@ function StyledNested() {
         industry.
       </Paragraph>
 
-      <Box>
+      <Box backGround="green">
         <Anynameuse className="btn">
           Click{" "}
           <span>
